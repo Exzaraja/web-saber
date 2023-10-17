@@ -28,8 +28,8 @@
 		<!-- Navbar -->
 						<div class="hidden md:block ">
         <ul class="flex space-x-10 mr-auto text-xl font-sans">
-          <li><n-link to="/about" class="hover:text-color-secondary ease-in duration-20">Home</n-link></li>
-          <li><a href="#" class="hover:text-color-secondary ease-in duration-20">Services</a></li>
+          <li><NuxtLink to="#">Home</NuxtLink></li>
+          <li><a href="./About" class="hover:text-color-secondary ease-in duration-20">About</a></li>
           <li><a href="#" class="hover:text-color-secondary ease-in duration-20">Features</a></li>
           <li><a href="#" class="hover:text-color-secondary ease-in duration-20">FAQ</a></li>
           <li><a href="#" class="hover:text-color-secondary ease-in duration-20">Contact</a></li> 
@@ -38,9 +38,9 @@
 
       <div class=" hidden md:block only:flex items-center cursor-pointer">
           <span class="text-white text-center mr-2">
-		<Icon name="uil:github" class="text-4xl ml-3" />
-    <Icon name="uil:github" class="text-4xl ml-3" />
-    <Icon name="uil:github" class="text-4xl ml-3" />
+		<Icon name="uil:facebook" class="text-4xl ml-3" />
+    <Icon name="uil:instagram" class="text-4xl ml-3" />
+    <Icon name="uil:twitter" class="text-4xl ml-3" />
           </span>
         </div>
 
@@ -91,8 +91,8 @@
 	</nav>
 
     <!-- main -->
-  <section id="home" class="h-screen">
-<div class="py-28 px-5">
+  <section id="home" class="min-h-screen">
+<div class="container py-28 px-5 mx-auto">
 <div class="flex items-center z-20 ">
     <div class="text-center mb-20 md:text-left md:w-[800px] md:pr-5">
         <h1 class="title mb-4"> Awesome App for Your Trash.</h1>
@@ -111,7 +111,7 @@
   <section id="features"  >
   <div class="text-center justify-between bg-green-500 py-10 h-screen">
     <h4 class="font-bold text-yellow-500 mb-4">Our Features</h4>
-    <div class=" items-center p-5 grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-20">
+    <div class=" container mx-auto items-center p-5 grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-20">
       <div class="rounded-lg bg-white p-8 shadow-2xl">
         <div>
           <img class="h-16 w-16 rounded-full object-cover" src="./img/tong-sampah.png" alt="">
@@ -149,7 +149,7 @@
   </section>
 
   <section id="features" class="bg-white h-screen">
-            <div class=" py-24">
+            <div class=" container mx-auto py-24">
                 <div class="text-center m-auto mb-20 md:w-1/2">
                 <h4 class="font-bold text-yellow-500 mb-4">Our Features</h4>
                 <h1 class="title">Solusi Mempermudah Membuang Sampah Dengan Aplikasi</h1>
@@ -166,43 +166,44 @@
       <div class="grid grid-cols-12">
         <div class="pb-6 col-span-full md:pb-0 md:col-span-6">
           <a href="#" class="flex justify-center space-x-3 md:justify-start">
-            <span class="slef-center text-2xl font-semibold">COMPANY NAME</span>
+            <span class="slef-center text-2xl font-semibold ml-1 mb-10">SABER</span>
           </a>
-        </div>
-        <div class="col-span-6 text-center md:text-left md:col-span-3">
-          <p class="pb-1 text-lg font-medium">Category</p>
-          <ul>
-            <li>
-              <a href="" class="hover:text-color-blob">Link</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-color-blob">Link</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-color-blob">Link</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-span-6 text-center md:text-left md:col-span-3">
-          <p class="pb-1 text-lg font-medium">Category</p>
-          <ul>
-            <li>
-              <a href="#" class="hover:text-color-blob">Link</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-color-blob">Link</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-color-blob">Link</a>
-            </li>
-          </ul>
-        </div>
-        <div class="text-center md:block md:text-left md:col-span-3">
+          <div class="text-center md:block md:text-left">
           <span class="text-white">
-		<Icon name="uil:github" class="text-4xl ml-3" />
-    <Icon name="uil:github" class="text-4xl ml-3" />
-    <Icon name="uil:github" class="text-4xl ml-3" />
+		<Icon name="uil:facebook" class="text-4xl" />
+    <Icon name="uil:instagram" class="text-4xl ml-3" />
+    <Icon name="uil:twitter" class="text-4xl ml-3" />
           </span>
+        </div>
+        </div>
+
+        <div class="col-span-6 text-center md:text-left md:col-span-3">
+          <p class="pb-1 text-lg font-medium">Category</p>
+          <ul>
+            <li>
+              <a href="/about.vue" class="hover:text-color-blob">Link</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-color-blob">Link</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-color-blob">Link</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-span-6 text-center md:text-left md:col-span-3">
+          <p class="pb-1 text-lg font-medium">Category</p>
+          <ul>
+            <li>
+              <a href="#" class="hover:text-color-blob">Link</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-color-blob">Link</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-color-blob">Link</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="grid justify-center pt-4 lg:justify-between">
